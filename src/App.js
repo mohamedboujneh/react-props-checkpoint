@@ -1,23 +1,17 @@
 import logo from './logo.svg';
 import './App.css';
+import ComponentProfil from './profil/ComponentProfil';
 
 function App() {
+
+  const styleObject = {         marginLeft: 100,  color: "red", textAlign: 'center'}
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div    >
+          <ComponentProfil style={styleObject} fullName='Mohamed Boujneh' bio="Life is way too short for bad vibes."  profession="Ingénieur informatique" >
+                <img src={logo} alt=""  />
+
+          </ComponentProfil>
     </div>
   );
 }
